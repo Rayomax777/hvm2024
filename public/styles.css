@@ -1,0 +1,203 @@
+/* Reseteo y configuración básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total del elemento */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-size: 16px; /* Tamaño base para fuentes */
+}
+
+/* Estilos del header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo del contenedor principal */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem; /* Añadido padding para que no quede pegado a los bordes */
+}
+
+/* Sección bienvenida */
+.bienvenida {
+    background-image: url('https://cdn.glitch.global/566a2a62-7609-4743-9cd9-ee5ef2458b86/background.jpg?v=1725231926079');
+    background-size: cover;
+    color: white;
+    padding: 15rem; /* Reducido padding para que se ajuste mejor en pantallas más pequeñas */
+    text-align: center;
+  
+}
+.bienvenidas {
+    background-image: url('https://cdn.glitch.global/566a2a62-7609-4743-9cd9-ee5ef2458b86/background.jpg?v=1725231926079');
+    background-size: cover;
+    color: white;
+    padding: 15rem; /* Reducido padding para que se ajuste mejor en pantallas más pequeñas */
+    text-align: center;
+  
+}
+/* Contenedor de búsqueda */
+.search-container {
+    margin: 1rem 0;
+    text-align: center; /* Centramos el contenido de búsqueda */
+}
+
+.search-container .logo {
+    vertical-align: middle;
+    width: 50px;
+}
+
+.search-container input[type="text"] {
+    padding: 0.5rem;
+    width: 80%;
+    max-width: 300px;
+}
+
+/* Estilos de botones */
+.button {
+    display: inline-block;
+    background-color: #FF5722;
+    color: white;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.5rem; /* Ajustado a rem */
+}
+
+/* Sección acerca de */
+.acerca-de {
+    padding: 2rem;
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  font-size: 1.5rem;
+}
+
+/* Iconos sociales */
+.social-icon {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Estilos para texto */
+p, h3, h4, h2 {
+    font-size: 1.5rem; /* Ajustado a rem */
+}
+
+h3 {
+    color: blue;
+    margin: auto;
+}
+h5 {
+    color: blue;
+    margin: auto;
+  font-size: 5rem;
+}
+
+h4 {
+    padding: 15px;
+    color: black;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
+
+    .bienvenida {
+        padding: 4rem; /* Ajustado para pantallas más pequeñas */
+    }
+
+    .button {
+        font-size: 1.2rem; /* Ajustado para mejor visualización */
+    }
+
+    p, h3, h4, h2 {
+        font-size: 1.2rem; /* Ajustado para mejor visualización */
+    }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  font-size: 0.8rem;
+}
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+    .bienvenida {
+        padding: 3rem; /* Ajustado para pantallas pequeñas */
+    }
+
+    .button {
+        font-size: 1rem; /* Ajustado para mejor visualización */
+    }
+
+    p, h3, h4, h2 {
+        font-size: 1rem; /* Ajustado para mejor visualización */
+    }
+
+    .search-container input[type="text"] {
+        width: 100%; /* Asegura que el campo de búsqueda ocupe todo el ancho */
+    }
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  font-size: 0.8rem;
+}
+}
+
+/* Estilos adicionales para el diseño flex y grid */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 601px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+    }
+}
+

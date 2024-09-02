@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C.E.M.G Héctor V. Medina</title>
+    <style>
+        /* Reseteo y configuración básica */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el ancho total del elemento */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            font-size: 16px; /* Tamaño base para fuentes */
+        }
+
+        /* Estilos del header */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilo del contenedor principal */
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            padding: 1rem; /* Añadido padding para que no quede pegado a los bordes */
+        }
+
+        /* Sección bienvenida */
+        .bienvenida, .bienvenidas {
+            background-image: url('https://cdn.glitch.global/566a2a62-7609-4743-9cd9-ee5ef2458b86/background.jpg?v=1725231926079');
+            background-size: cover;
+            color: white;
+            padding: 5rem 1rem; /* Ajustado padding para que se vea bien en pantallas más pequeñas */
+            text-align: center;
+        }
+  
+        /* Estilos de botones */
+        .button {
+            display: inline-block;
+            background-color: #FF5722;
+            color: white;
+            padding: 0.8rem 2rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1rem; /* Ajustado a rem */
+        }
+
+        /* Sección acerca de */
+        .acerca-de {
+            padding: 2rem;
+            line-height: 1.6; /* Mejora la legibilidad */
+        }
+
+        /* Estilo del footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            font-size: 1.5rem; /* Ajustado para una mejor visualización en móviles */
+        }
+
+        /* Iconos sociales */
+        .social-icon {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Estilos para texto */
+        p, h2, h3, h4 {
+            font-size: 1.5rem; /* Ajustado a rem */
+        }
+
+        h3 {
+            color: blue;
+            margin: auto;
+            text-align: center;
+        }
+
+        h4 {
+            padding: 15px;
+            color: black;
+        }
+
+        /* Media Queries */
+        @media (max-width: 1024px) {
+            body {
+                font-size: 15px;
+            }
+
+            .bienvenida, .bienvenidas {
+                padding: 4rem 1rem; /* Ajustado para pantallas más pequeñas */
+            }
+
+            .button {
+                font-size: 0.9rem; /* Ajustado para mejor visualización */
+            }
+
+            p, h2, h3, h4 {
+                font-size: 1rem; /* Ajustado para mejor visualización */
+            }
+          footer {
+  font-size: 0.8rem;
+}
+        }
+
+        @media (max-width: 600px) {
+            body {
+                font-size: 15px;
+            }
+
+            .bienvenida, .bienvenidas {
+                padding: 3rem 1rem; /* Ajustado para pantallas pequeñas */
+            }
+
+            .button {
+                font-size: 0.8rem; /* Ajustado para mejor visualización */
+            }
+
+            p, h2, h3, h4 {
+                font-size: 0.8rem; /* Ajustado para mejor visualización */
+            }
+
+            .search-container input[type="text"] {
+                width: 100%; /* Asegura que el campo de búsqueda ocupe todo el ancho */
+            }
+          footer {
+  font-size: 0.8rem;
+}
+        }
+
+        /* Estilos adicionales para el diseño flex y grid */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (min-width: 601px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>C.E.M.G Héctor V. Medina</h1>
+        <nav>
+            <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/acerca-de">Acerca de</a></li>
+          <li>
+            <a
+              href="https://www.facebook.com/cemghector.v.medina.9"
+              class="icon-facebook"
+              >Facebook</a
+            >
+          </li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="bienvenidas">
+            <h3>C.E.M.G Héctor V. Medina</h3>
+        </section>
+        <section class="acerca-de">
+            <p><strong>Visión General</strong></p>
+            <p>El C.E.M.G Técnico Héctor V. Medina es una institución educativa ubicada en Valle de Ángeles, F.M., comprometida con la formación integral de sus estudiantes. Fundado con el propósito de ofrecer una educación de calidad, el colegio se destaca por su enfoque en el desarrollo académico, social y personal de los jóvenes.</p>
+            
+            <p><strong>Historia y Misión</strong></p>
+            <p>Desde su inauguración, el C.E.M.G Técnico Héctor V. Medina ha trabajado incansablemente para proporcionar un entorno educativo que fomente el aprendizaje y el crecimiento personal. La misión del colegio es ofrecer una educación que prepare a los estudiantes para enfrentar los desafíos del mundo moderno, equipándolos con conocimientos, habilidades y valores sólidos.</p>
+            
+            <p><strong>Programas y Metodología</strong></p>
+            <p>El colegio ofrece una variedad de programas educativos adaptados a las necesidades y aspiraciones de sus alumnos. Los planes de estudio están diseñados para cubrir una amplia gama de materias, asegurando que cada estudiante reciba una formación equilibrada. La metodología educativa se basa en métodos innovadores que promueven el pensamiento crítico, la creatividad y el trabajo en equipo.</p>
+            
+            <p><strong>Infraestructura y Servicios</strong></p>
+            <p>Las instalaciones del C.E.M.G Técnico Héctor V. Medina están equipadas con modernos recursos educativos y tecnológicos que facilitan un aprendizaje efectivo. El colegio cuenta con aulas bien equipadas, laboratorios, áreas deportivas y espacios recreativos que contribuyen a un entorno educativo dinámico y estimulante.</p>
+            
+            <p><strong>Compromiso con la Comunidad</strong></p>
+            <p>El colegio se enorgullece de su compromiso con la comunidad local. Además de su labor educativa, participa en diversas actividades y proyectos que benefician a la comunidad de Valle de Ángeles. Esta implicación en la vida comunitaria refleja su dedicación a formar ciudadanos responsables y comprometidos.</p>
+            
+            <p><strong>Conclusión</strong></p>
+            <p>El C.E.M.G Técnico Héctor V. Medina continúa siendo un pilar fundamental en la educación de Valle de Ángeles, ofreciendo a sus estudiantes una base sólida para su futuro. Con un equipo de profesionales dedicados y una infraestructura de primer nivel, el colegio sigue siendo una excelente opción para quienes buscan una educación integral y de calidad.</p>
+        </section>
+    </main>
+    <footer>
+        <a href="https://www.facebook.com/cemghector.v.medina.9" class="social-icon">Facebook</a>
+        <a href="https://twitter.com" class="social-icon">Twitter</a>
+        <a href="https://instagram.com" class="social-icon">Instagram</a>
+        <p>&copy; 2024 C.E.M.G Técnico Héctor V. Medina. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
